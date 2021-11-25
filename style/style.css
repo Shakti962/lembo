@@ -1,0 +1,281 @@
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1e21;
+    color: #ffffff;
+}
+a, a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.color-yellow{
+    color: #f6ce42;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/*Divider*/
+.divider{
+    color: #f6ce42;
+    margin: 0;
+}
+.divider hr{
+    height: 2px;
+}
+/*NavBar*/
+nav{
+    margin: 0;
+    background-color: #1a1e21;
+}
+.side-nav .closebtn{
+    display: none;
+}
+.logo{
+    width: 150px;
+}
+.nav-img{
+    width: 43px;
+}
+.navbar-link{
+    padding: 8px;
+    transition-duration: 0s !important;
+}
+.navbar-link:hover{
+    background-color: #f6ce42;
+    color: #1a1e21;
+    padding: 8px;
+    border-radius: 15px;
+}
+.active{
+    background-color: #f6ce42;
+    color: #1a1e21;
+    padding: 8px;
+    border-radius: 15px;
+}
+.active:hover{
+    color: #1a1e21;
+}
+/*Main Section*/
+.big-words{
+    font-size: 70px;
+}
+.main-btn{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 20px;
+    margin: 10px 20px 10px 0;
+}
+.main-btn:hover {
+    color: white;
+}
+.main-btn1{
+    background-color: #f6ce42;
+    border: none;
+    color: #1a1e21;
+}
+.main-btn1:hover {
+    color: #1a1e21;
+}
+.car-img{
+    margin-left: -340px;
+    width: 2200px;
+    animation: animation ease 1s;
+}
+@keyframes animation {
+    0% {
+        margin-left: 650px;
+    }
+    100% {
+        margin-left: -340px;
+    }
+}
+.skew-div{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+}
+.skew-div1:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: #1A1E21E5;
+    transform-origin: 100% 0;
+    transform: skew(-33deg);
+    z-index: 10;
+}
+.skew-div2:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: #1A1E21E5;
+    transform-origin: 100% 0;
+    transform: skew(33deg);
+    z-index: 10;
+}
+.news-title{
+    z-index: 11;
+}
+.skew-div:nth-child(even) .news-title{
+    right: 0;
+}
+.news-title h1{
+    cursor: pointer;
+    font-size: 65px;
+    margin: 50px;
+}
+/*Products-Section*/
+.product{
+    border: 2px solid #f6ce42;
+}
+.product:hover{
+    background-color: #222426;
+}
+
+/*About Us*/
+.end-line{
+    word-spacing: 2px;
+    font-size: 15px;
+}
+/*blog.html*/
+#blog-main{
+    margin-top: 63px;
+}
+.blog-img h1 span{
+    color: #ecb200;
+}
+.blog-title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+/*Login.html*/
+input{
+    border: none;
+    outline: none;
+    background-color: #1a1e21;
+    color: #fff;
+    border-bottom: 1px solid #f6ce42;
+}
+.login-btn{
+    border: 1px solid #f6ce42;
+    border-radius: 20px;
+    color: #f6ce42;
+    padding: 8px 20px;
+    margin: 30px 20px 10px 0;
+}
+.login-btn:hover{
+    background-color: #f6ce42;
+    color: #1a1e21;
+}
+/***************** For Smallest Device *******************/
+/***************** For Mobile Device *******************/
+@media only screen and (max-width: 600px) {
+    nav{
+        margin: 0;
+    }
+    .nav-img{
+        width: 35px;
+        padding-top: 10px;
+    }
+    .big-words{
+        font-size: 40px;
+    }
+    #main div{
+        position: static;
+    }
+    .main-btn{
+        width: 100%;
+    }
+    .car-img{
+        margin-left: -60px;
+        width: 1000px;
+    }
+    #about div div b{
+        display: block;
+    }
+    .news-title h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    /*blog.html*/
+    /*login.html*/
+    .login-block{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .login-block div input{
+        width: 100% !important;
+    }
+}
+/***************** For Tablet Device *******************/
+@media only screen and (max-width: 991px) and (min-width: 601px){
+    .car-img{
+        margin-left: -60px;
+        width: 1500px;
+    }
+    .blog-title{
+        top: 360px;
+    }
+    .news-title h1{
+        font-size: 40px;
+    }
+}
+/***************** For Both Mobile & Tablet Device *******************/
+@media only screen and (max-width: 991px){
+    .navbar-link:hover{
+        background-color: #1a1e21;
+        color: #fff;
+        padding: 8px 0;
+    }
+    .side-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #1a1e21;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+    }
+    .side-nav .closebtn{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 26px;
+        margin-left: 50px;
+    }
+    .active{
+        border-radius: 0;
+    }
+    .login-block div input{
+        text-align: center;
+    }
+    @keyframes animation {
+        0% {
+            margin-left: 650px;
+        }
+        100% {
+            margin-left: -60px;
+        }
+    }
+    .login-img{
+        width: 150px;
+    }
+
+    .blog-title{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/795131a83d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap-Link -->
+    <link rel="stylesheet" href="plugins/bootstrap.min.css">
+    <!-- Css-Link -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="px-md-3  navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="svgs/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="openNav()"><img class="nav-img" src="svgs/nav-icon.svg" alt=""></span>
+        </button>
+        <div id="sideNav" class="side-nav d-inline d-lg-none ms-auto" onclick="closeNav()">
+            <div class="closebtn mb-5" ><i class="color-yellow fas fa-times" onclick="closeNav()"></i></div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html">Home</a></li>
+                <li class="nav-item px-3" onclick="addPadding('cars')"><a class="nav-link navbar-link" href="index.html#cars">Cars</a></li>
+                <li class="nav-item px-3" onclick="addPadding('news')"><a class="nav-link navbar-link" href="index.html#news">News</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="#about">About us</a></li>
+                <li class="nav-item px-3"><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-inline ms-auto">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html">Home</a></li>
+                <li class="nav-item px-3" onclick="addPadding('cars')"><a class="nav-link navbar-link" href="index.html#cars">Cars</a></li>
+                <li class="nav-item px-3" onclick="addPadding('news')"><a class="nav-link navbar-link" href="index.html#news">News</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="#about">About us</a></li>
+                <li class="nav-item px-3"><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="blog-main" class="w-100">
+        <div class="blog-img">
+            <img class="w-100" src="images/blog-car.jpg" alt="">
+            <h1 class="blog-title mx-1">TERZO MILLENNIO: A VIEW OF THE <span>FUTURE</span></h1>
+        </div>
+        <div class="divider row text-center overflow-hidden p-3 pt-5 w-100">
+            <hr class="col-lg-5 my-auto">
+            <h3 class="col-lg-2">Blog</h3>
+            <hr class="col-lg-5 my-auto">
+        </div>
+        <div class="blog-content p-4 px-5">
+            <p>The Lamborghini Terzo Millennio is famous for its incredibly futuristic lines that make it an authentic masterpiece of automotive design. But what are the technological solutions being researched by the Lamborghini R&D department in collaboration with the Massachusetts Institute of Technology that might make the dream of a totally electric Lamborghini come true one day?</p>
+            <p class="color-yellow text-center"><b>The challenge of a visionary design</b></p>
+            <p>The Lamborghini Centro Stile designed the Terzo Millennio by radically revising the proportions and weight distribution with the goal of maximizing aerodynamic performance, styling and the thrill of driving. However, this time - thanks to the motors housed in the wheels and the absence of lithium batteries - the monocoque can contain only the energy accumulation system and the two seats, giving the car its characteristic racing set-up. The result is a streamlined and lightweight design with front openings that optimize the air flows and the large Y-shaped headlights that make it iconic.</p>
+            <p class="color-yellow text-center"><b>Energy storage systems</b></p>
+            <p>The Terzo Millennio introduced an innovative technology then featured in the Sián FKP 37: supercapacitors. With their high efficiency both in accumulating and discharging the power, the supercapacitors store a quantity of power per kg much higher than the normal Li-ion batteries, thus recovering the potential energy dissipated when braking and discharging it instantaneously to get incomparable boosts.</p>
+            <p class="color-yellow text-center"><b>Functional and innovative materials</b></p>
+            <p>To support the electrical revolution, the external materials in carbon fiber have aesthetic, aerodynamic and structural as well as energy storage functions. The study of the Terzo Millennio bodyshell panels also included the possibility to include nanofillers, actually making them part of the battery and supercapacitor system. Materials were also designed to develop the concept of self-repair in the future, eliminating the risk of small fractures spreading in the carbon structure adopting micro channels filled with chemical compounds.</p>
+        </div>
+    </section>
+    <div class="divider row text-center overflow-hidden p-3 w-100">
+        <hr class="col-lg-5 my-auto">
+        <h3 class="col-lg-2">More Blogs</h3>
+        <hr class="col-lg-5 my-auto">
+    </div>
+    <section id="news" class="w-100 overflow-hidden">
+        <div class="row skew-div skew-div1 mt-4">
+            <div class="col-6 position-absolute news-title">
+                <h1>WE MADE THE FUTURE FOR GENERATION YOU WANT.</h1>
+            </div>
+            <img class="col" src="images/blog1.jpg" alt="">
+        </div>
+        <div class="row skew-div skew-div2 mt-4">
+            <div class="col-6 position-absolute news-title">
+                <h1>LAMBORGHINI HURACAN SUPER TROFEO EVO.</h1>
+            </div>
+            <img class="col" src="images/blog2.jpg" alt="">
+        </div>
+    </section>
+    <div class="divider row text-center overflow-hidden p-3 pt-5 w-100">
+        <hr class="col-lg-5 my-auto">
+        <h3 class="col-lg-2">About Us</h3>
+        <hr class="col-lg-5 my-auto">
+    </div>
+    <section id="about" class="m-3 my-4 overflow-hidden text-center">
+        <div class="row">
+            <div class="col-lg-6 py-3">
+                <b class="m-md-4">COMPANY</b>
+                <b class="m-md-4">CAREERS</b>
+                <b class="m-md-4">MEDIA CENTER</b>
+                <b class="m-md-4">PRIVACY & LEGAL</b>
+            </div>
+            <div class="col-lg-6 py-2">
+                <i class="fab fa-twitter footer-icon mx-4"></i>
+                <i class="fab fa-facebook-f footer-icon mx-4"></i>
+                <i class="fab fa-instagram footer-icon mx-4"></i>
+            </div>
+            <div class="end-line col-lg-6 m-md-4">
+                <p>Copyright © 2021 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group.</p>
+                <p>All rights reserved. VAT no. IT 00591801204</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="plugins/bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

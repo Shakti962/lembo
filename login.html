@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/795131a83d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap-Link -->
+    <link rel="stylesheet" href="plugins/bootstrap.min.css">
+    <!-- Css-Link -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="px-md-3  navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="svgs/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="openNav()"><img class="nav-img" src="svgs/nav-icon.svg" alt=""></span>
+        </button>
+        <div id="sideNav" class="side-nav d-inline d-lg-none ms-auto" onclick="closeNav()">
+            <div class="closebtn mb-5" ><i class="color-yellow fas fa-times" onclick="closeNav()"></i></div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html">Home</a></li>
+                <li class="nav-item px-3" onclick="addPadding('cars')"><a class="nav-link navbar-link" href="index.html#cars">Cars</a></li>
+                <li class="nav-item px-3" onclick="addPadding('news')"><a class="nav-link navbar-link" href="index.html#news">News</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html#about">About us</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="blog.html">Blog</a></li>
+                <li class="nav-item px-3"><a class="nav-link active" href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-inline ms-auto">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html">Home</a></li>
+                <li class="nav-item px-3" onclick="addPadding('cars')"><a class="nav-link navbar-link" href="index.html#cars">Cars</a></li>
+                <li class="nav-item px-3" onclick="addPadding('news')"><a class="nav-link navbar-link" href="index.html#news">News</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html#about">About us</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="blog.html">Blog</a></li>
+                <li class="nav-item px-3"><a class="nav-link active" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row d-flex align-items-center justify-content-center m-5 p-5 login-block">
+        <img class="col-lg-6 login-img" src="images/sm-logo.png" alt="">
+        <div class="col-lg-6 text-center">
+            <input class="p-2 w-50 my-4" type="text" placeholder="Name">
+            <input class="p-2 w-50 my-4" type="password" placeholder="Password"><br>
+            <button class="btn login-btn">Login</button>
+        </div>
+    </div>
+
+<!-- JS Work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="plugins/bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
